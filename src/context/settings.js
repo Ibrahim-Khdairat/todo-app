@@ -8,7 +8,7 @@ export default function SettingsProvider(props) {
     const [sort, setSort] = useState('difficulty');
 
     return (
-        <SettingsContext.Provider value={{ hide, itemNumber, sort }}>
+        <SettingsContext.Provider value={{ hide, itemNumber, sort,setHide,setItemNumber,setSort }}>
             {props.children}
         </SettingsContext.Provider>
     )

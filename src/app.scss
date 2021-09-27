@@ -5,8 +5,27 @@
 }
 
 .list {
-    margin-top: 5%;
+    // margin-top: 5%;
     width: 60%;
     display: block;
     float: right;
 }
+
+.false {
+    background-color: rgb(61, 216, 23);
+    width: 10%;
+    border-radius: 20px;
+    padding-left: 2%;
+    font-weight: bold;
+}
+
+
+.true {
+    background-color: red;
+    width: 10%;
+    padding-left: 2%;
+    border-radius: 20px;
+    font-weight: bold;
+
+}
+
