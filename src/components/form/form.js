@@ -11,17 +11,21 @@ function Form(props) {
 
             <label>
                 <span>To Do Item</span>
-                <input onChange={props.handleChange} name="text" type="text" placeholder="Item Details" />
+                <input onChange={props.handleChange} name="todo" type="text" placeholder="Item Details"  />
+                {/* <input  name="todo" type="text" placeholder="Item Details"  /> */}
+
             </label>
 
             <label>
                 <span>Assigned To</span>
                 <input onChange={props.handleChange} name="assignee" type="text" placeholder="Assignee Name" />
+                {/* <input name="assignee" type="text" placeholder="Assignee Name" /> */}
             </label>
 
             <label>
                 <span>Difficulty</span>
                 <input onChange={props.handleChange} defaultValue={3} type="range" min={1} max={5} name="difficulty" />
+                {/* <input  defaultValue={3} type="range" min={1} max={5} name="difficulty" /> */}
             </label>
 
             <label>

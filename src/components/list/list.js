@@ -6,10 +6,16 @@ function List(props) {
         <div className="list">
             <Card elevation={Elevation.THREE}>
                 {
-                    props.pagination().map(item => (
+                    props.pagination().map((item,idx) => (
                         <div key={item.id}>
+                            {/* <p>{item.id}</p>
+                            <p>{idx}</p>
+
+                            <p>Status : {item.complete.toString()}</p> */}
+
+
                             <p>{item.complete==false ? "Pending" : "Complete"}</p>
-                            <p>{item.text}</p>
+                            <p>To Do : {item.todo}</p>
                             <p><small>Assigned to: {item.assignee}</small></p>
                             <p><small>Difficulty: {item.difficulty}</small></p>
                             {
