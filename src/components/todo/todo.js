@@ -82,8 +82,7 @@ const ToDo = () => {
     // console.log("List ------->>>> ",list);
     return (
         <>
-            <Header incomplete={incomplete} />
-
+<h1>To Do : {incomplete} items pending</h1>
 
             <Form
                 handleSubmit={handleSubmit}

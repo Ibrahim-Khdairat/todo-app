@@ -1,12 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import '@blueprintjs/core/lib/css/blueprint.css';
+import SettingsProvider from './context/settings'
+
 import '@blueprintjs/icons/lib/css/blueprint-icons.css';
 import App from './app.js';
 
 class Main extends React.Component {
   render() {
-    return <App />;
+    return (
+      <SettingsProvider>
+          <App />
+      </SettingsProvider>
+    )
   }
 }
 
