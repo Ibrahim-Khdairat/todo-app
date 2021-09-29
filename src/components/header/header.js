@@ -1,10 +1,14 @@
-import React from 'react';
+import React,{useContext} from 'react';
 import { Navbar, Button, Alignment } from '@blueprintjs/core';
 import { Link } from "react-router-dom";
 
 import './header.scss';
+import { LoginContext } from '../../context/login';
 
 function Header(props) {
+
+ const login = useContext(LoginContext)
+    
     return (
         // {/* <h1>To Do List: {props.incomplete} items pending</h1> */}
 
@@ -19,6 +23,8 @@ function Header(props) {
                 <Link to="/settings" className="pages">
                 <Button className="bp3-minimal" icon="cog" text="Settings" />
                 </Link>
+                <Button className="bp3-minimal" icon="off" text="LogOut" onClick = {login.logout} />
+
             </Navbar.Group>
         </Navbar>
 

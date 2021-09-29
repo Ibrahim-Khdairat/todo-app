@@ -11,6 +11,7 @@ export default function SettingForm() {
     const { handleChange, handleSubmit } = useForm(saveSetting);
 
     function saveSetting(setting) {
+        console.log(setting.number)
         settings.setItemNumber(setting.number);
         console.log(settings.hide);
     }
